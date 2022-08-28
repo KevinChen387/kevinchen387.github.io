@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>About</title>
+
+    <!--Quick visit-->
+    <p>
+      <div size=4 style="float:left; font-family:Georgia">
+        Private&ensp;Version
+      </div>
+
+      <div style="float:right">
+        <form>
+          <select class="shared" name="pageselect" onchange="page(this)";language="javascript"
+          style="width:100; height:24">
+            <option>Select</option>
+            <option value="main_page.html">Main&ensp;Page</option>
+            <option value="about.html">About</option>
+            <option value="all.html">All</option>
+            <option value="https://www.google.com">Google</option>
+            <option value="https://www.bing.com">Bing</option>
+            <option value="https://www.wikipedia.org">Wikipedia</option>
+            <option value="https://www.github.com">Github</option>
+            <option value="https://outlook.live.com">Outlook</option>
+            <option value="https://mail.163.com">163&ensp;Mail</option>
+          </select>
+
+          <script language="javascript">
+            function page(s){
+              var d = s.options[s.selectedIndex].value;
+              window.open(d)
+              s.selectedIndex = 0;
+            }
+          </script>
+        </form>
+      </div>
+
+      <div style="float:right; font-family:Georgia">
+        Quick&ensp;Visit:&ensp;
+      </div>
+    </p>
+
+    <!--Title-->
+    <br><br><br>
+    <h1 align="center">About</h1>
+  </head>
+
+
+  <body align="center">
+    <!--Kevin_Chen.PNG-->
+    <p>
+      <br><br>
+      <img src=kevin_chen.PNG title="Kevin Chen" alt="Kevin Chen"
+      style="width:60; height:60; border-radius:50%">
+    </p>
+
+    <!--About-->
+    <pre>
+      <font size=4 style="font-family:Georgia">
+Private Web Verison (HTML)
+For Willson Wang & Kevin Chen
+Created by Kevin Chen on August.25, 2022.
+
+Last updated: Aug.25, 2022
+      </font>
+    </pre>
+
+    <!--Go back-->
+    <p>
+      <button style="width:200; height:40; border-radius:12.5px; background-color:00BBFF">
+        <a href=main_page.html style="text-decoration:none">
+          <font color=#0000CC size=2 style="font-family:Georgia">Go back to main page</font>
+        </a>
+      </button>
+    </p>
+
+    <!--Social-->
+    <p>
+      <!--Twitter-->
+      <a href=https://twitter.com/KevinCh93106311 style="text-decoration:none">
+        <img src=twitter.jpeg title="Twitter" style="width:30">
+      </a>
+      &ensp;&ensp;&ensp;
+
+      <!--Facebook-->
+      <a href=https://www.facebook.com/profile.php?id=100079477910822 style="text-decoration:none">
+        <img src=facebook.png title="Facebook" style="width:30">
+      </a>
+      &ensp;&ensp;&ensp;
+
+      <!--Pinterest-->
+      <a href=https://pinterest.com/Kevin_Chen387 style="text-decoration:none">
+        <img src=pinterest.png title="Pinterest" style="width:30">
+      </a>
+    </p>
+  </body>
+</html>
