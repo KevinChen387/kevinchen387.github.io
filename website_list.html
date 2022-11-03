@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <title></title>
+
+    <!--Quick Visit-->
+    <p>
+      <div size=4 style="float:left; font-family:Georgia">
+        Private&ensp;Version
+      </div>
+
+      <div style="float:right">
+        <form>
+          <select class="shared" name="pageselect" onchange="page(this)";language="javascript"
+          style="width:100; height:24">
+            <option>Select</option>
+            <option value="main_page.html">Main&ensp;Page</option>
+            <option value="about.html">About</option>
+            <option value="all.html">All</option>
+            <option value="https://www.google.com">Google</option>
+            <option value="https://www.bing.com">Bing</option>
+            <option value="https://www.wikipedia.org">Wikipedia</option>
+            <option value="https://www.github.com">Github</option>
+            <option value="https://outlook.live.com">Outlook</option>
+            <option value="https://mail.163.com">163&ensp;Mail</option>
+          </select>
+
+          <script language="javascript">
+            function page(s){
+              var d = s.options[s.selectedIndex].value;
+              window.open(d)
+              s.selectedIndex = 0;
+            }
+          </script>
+        </form>
+      </div>
+
+      <div style="float:right; font-family:Georgia">
+        Quick&ensp;Visit:&ensp;
+      </div>
+    </p>
+
+    <br><br><br>
+    <h1>Website List</h1>
+    <hr width=400>
+  </head>
+
+
+  <body align="center">
+    <!--Websites List-->
+    <style>
+      button {
+        width:300;
+        height:50;
+        border-radius:12.5px;
+        font-family:Georgia;
+        background-color:#77DDFF;
+      }
+      a {
+        text-decoration:none;
+      }
+    </style>
+
+    <script>
+      function write_site(name, site) {
+        document.write("\
+        <p>\n\
+        <button>\n\
+        <a href=" + site + ">\n\
+        <font size=4 color=#0000CC>" + name + "</font>\n\
+        </a>\n\
+        </button>\n\
+        </p>");
+      }
+      
+      // buttons
+      write_site("Google", "https://google.com");
+      write_site("Wikipedia", "https://wikipedia.org");
+      write_site("Bing", "https://bing.com");
+      write_site("NordVPN", "https://nordvpn.com");
+      write_site("NordPass", "https://nordpass.com");
+      write_site("NordLocker", "https://nordlocker.com");
+      write_site("Surfshark", "https://surfshark.com");
+      write_site("Proton", "https://proton.me");
+      write_site("ProtonVPN", "https://protonvpn.com");
+      write_site("ProtonMail", "https://proton.me/mail");
+      write_site("1Password", "https://1password.com");
+      write_site("Github", "https://github.com");
+      write_site("Microsoft", "phttps://microsoft.com");
+      write_site("Outlook", "https://outlook.live.com");
+      write_site("163 Mail", "https://mail.163.com");
+      write_site("Pinterest", "https://pinterest.com");
+      write_site("Twitter", "https://twitter.com");
+      write_site("Facebook", "https://facebook.com");
+    </script>
+
+    <!--Go back-->
+    <p>
+      <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
+        <a href=all.html style="text-decoration:none">
+          <font color=#0000CC size=4 style="font-family:Georgia">Go back to all</font>
+        </a>
+      </button>
+    </p>
+
+    <p>
+      <button style="width:300; height:50; border-radius:12.5px; background-color:#00BBFF">
+        <a href=main_page.html style="text-decoration:none">
+          <font color=#0000CC size=4 style="font-family:Georgia">Go back to main page</font>
+        </a>
+      </button>
+    </p>
+  </body>
+</html>
