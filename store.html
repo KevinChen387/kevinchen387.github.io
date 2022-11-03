@@ -1,0 +1,158 @@
+<html>
+  <head>
+    <title></title>
+
+    <!--Quick Visit-->
+    <p>
+      <div size=4 style="float:left; font-family:Georgia">
+        Private&ensp;Version
+      </div>
+
+      <div style="float:right">
+        <form>
+          <select class="shared" name="pageselect" onchange="page(this)";language="javascript"
+          style="width:100; height:24">
+            <option>Select</option>
+            <option value="main_page.html">Main&ensp;Page</option>
+            <option value="about.html">About</option>
+            <option value="all.html">All</option>
+            <option value="https://www.google.com">Google</option>
+            <option value="https://www.bing.com">Bing</option>
+            <option value="https://www.wikipedia.org">Wikipedia</option>
+            <option value="https://www.github.com">Github</option>
+            <option value="https://outlook.live.com">Outlook</option>
+            <option value="https://mail.163.com">163&ensp;Mail</option>
+          </select>
+
+          <script language="javascript">
+            function page(s){
+              var d = s.options[s.selectedIndex].value;
+              window.open(d)
+              s.selectedIndex = 0;
+            }
+          </script>
+        </form>
+      </div>
+
+      <div style="float:right; font-family:Georgia">
+        Quick&ensp;Visit:&ensp;
+      </div>
+    </p>
+
+    <br><br><br>
+    <h1>Store</h1>
+    <hr width=400>
+  </head>
+
+
+  <body align="center">
+    <!--Style-->
+    <style>
+      a {
+        text-decoration:none;
+      }
+      img {
+        width:180;
+      }
+      font {
+        font-family:Menlo;
+      }
+    </style>
+
+    <!--VPN-->
+    <p><h2>VPN Price</h2></p>
+
+    <p>
+      <a href=https://nordvpn.com>
+        <img src=nordvpn.PNG>
+      </a><br>
+      <font>1 month:&ensp;$11.99</font><br>
+      <font>1 Year:&ensp;&ensp;$99.99</font>
+    </p>
+    <br>
+    <p>
+      <a href=https://surfshark.com>
+        <img src=surfshark.PNG>
+      </a><br>
+      <font>1 month:&ensp;$10.99</font><br>
+      <font>1 year:&ensp;&ensp;$47.99</font>
+    </p>
+    <br>
+    <p>
+      <a href=https://purevpn.com>
+        <img src=purevpn.PNG>
+      </a><br>
+      <font>1 month:&ensp;$08.99</font><br>
+      <font>1 year:&ensp;&ensp;$39.99</font>
+    </p>
+    <br>
+    <p>
+      <a href=https://protonvpn.com>
+        <img src=protonvpn.PNG>
+      </a><br>
+      <font>( Premium Version )</font><br>
+      <font>1 year:&ensp;&ensp;$99.99</font>
+    </p>
+    <br>
+    <p>
+      <a href=https://privateinternetaccess.com>
+        <img src=pia.PNG>
+      </a><br>
+      <font>1 month:&ensp;$11.99</font><br>
+      <font>1 year:&ensp;&ensp;$49.99</font>
+    </p>
+    <br>
+
+    <!--Password Manager-->
+    <p><h2>Password Manager Price</h2></p>
+    
+    <p>
+      <a href=https://nordpass.com>
+        <img src=nordpass.jpg>
+      </a><br>
+      <font>( Premium Version )</font><br>
+      <font>1 year:&ensp;&ensp;$35.99</font>
+    </p>
+    <br>
+    <p>
+      <a href=https://dashlane.com>
+        <img src=dashlane.PNG>
+      </a><br>
+      <font>( Premium Version )</font><br>
+      <font>1 month:&ensp;$03.99</font>
+    </p>
+    <br>
+    <p>
+      <a href=https://1password.com>
+        <img src=onepassword.PNG>
+      </a><br>
+      <font>1 month:&ensp;$03.99</font><br>
+      <font>1 year:&ensp;&ensp;$35.99</font>
+    </p>
+    <br>
+    <p>
+      <a href=https://lastpass.com>
+        <img src=lastpass.PNG>
+      </a><br>
+      <font>( Premium Version )</font><br>
+      <font>1 year:&ensp;&ensp;$35.99</font>
+    </p>
+    <br>
+
+    <!--Go back-->
+    <p>
+      <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
+        <a href=all.html style="text-decoration:none">
+          <font color=#0000CC size=4 style="font-family:Georgia">Go back to all</font>
+        </a>
+      </button>
+    </p>
+    <p>
+      <button style="width:300; height:50; border-radius:12.5px; background-color:#00BBFF">
+        <a href=main_page.html style="text-decoration:none">
+          <font color=#0000CC size=4 style="font-family:Georgia">Go back to main page</font>
+        </a>
+      </button>
+    </p>
+  </body>
+</html>
