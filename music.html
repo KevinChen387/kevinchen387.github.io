@@ -39,52 +39,41 @@
       </div>
     </p>
 
-    <br><br><br>
-    <h1>Music</h1>
-    <hr width=400>
-  </head>
+    <!--JavaScript-->
+    <script src="write_file.js"></script>
 
-
-  <body align="center">
-    <!--Style-->
+    <!--CSS-->
     <style>
-      button {
-        width:200;
-        height:40;
-        border-radius:12.5px;
-        background-color:#00AAAA;
+      li {
+        font-size:20;
         font-family:Georgia;
-        font-size:15px;
-      }
-      a {
-        text-decoration:none;
+        height:30px;
       }
     </style>
 
-    <!--JavaScript-->
-    <script>
-      function write_music(name, file) {
-        document.write('\
-        <p>\n\
-        <h2>' + name + '</h2>\n\
-        <audio controls src=' + file + '>\n\
-        </audio>\n\
-        </p>\n\
-        <button>\n\
-        <a href=' + file + ' download=' + file + '>Download</a>\n\
-        </button>\n\
-        <br><br><br>\n\
-        </p>');
-      }
+    <br><br><br>
+  </head>
 
-      write_music("Alpha", "alpha.mp3");
-      write_music("Oblivion", "oblivion.mp3");
-      write_music("Odyssey", "odyssey.mp3");
-      write_music("Once Upon a Time", "once_upon_a_time.mp3");
-      write_music("Reverie", "reverie.mp3");
-      write_music("The Grid", "the_grid.mp3");
-      write_music("The Phoenix", "the_phoenix.mp3");
+
+  <body align="left">
+    <h1>Music</h1>
+    <hr width=400 align="left">
+    
+    <br>
+    <ul>
+
+    <script>
+      write_file("Alpha", "alpha.mp3");
+      write_file("Oblivion", "oblivion.mp3");
+      write_file("Odyssey", "odyssey.mp3");
+      write_file("Unce Upon a Time", "once_upon_a_time.mp3");
+      write_file("Reverie", "reverie.mp3");
+      write_file("The Grid", "the_grid.mp3");
+      write_file("The Phoenix", "the_phoenix.mp3");
     </script>
+
+    </ul>
+    <br>
 
     <!--Go back-->
     <p>
