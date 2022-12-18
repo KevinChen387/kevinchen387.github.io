@@ -1,10 +1,12 @@
 <html>
   <head>
-    <title>109&ensp;&&ensp;105</title>
+
+    <title>109 & 105</title>
+    <meta charset="UTF-8" />
 
     <!--Quick Visit-->
     <p>
-      <div size=4 style="float:left; font-family:Georgia">
+      <div size="4" style="float:left; font-family:Georgia">
         Private&ensp;Version
       </div>
 
@@ -27,7 +29,7 @@
           <script language="javascript">
             function page(s){
               var d = s.options[s.selectedIndex].value;
-              window.open(d)
+              window.open(d);
               s.selectedIndex = 0;
             }
           </script>
@@ -39,18 +41,28 @@
       </div>
     </p>
 
-    <br><br><br>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="button.css" />
+    <style>
+      .georgia {
+        font-family:Georgia;
+      }
+    </style>
+
   </head>
 
 
   <body align="center">
-    <h1>109&ensp;&&ensp;105</h1>
-    <hr width=400>
+
+    <br/><br/><br/>
+
+    <h1>109 & 105</h1>
+    <hr width="400" />
 
     <!--109-->
     <p>
-      <h2 style="font-family:Georgia">E-mail</h2>
-      <pre style="font-family:Georgia">
+      <h2 class="georgia">E-mail</h2>
+      <pre class="georgia">
 chenguohua352021@gmail.com   (Master)
 = chenguohua352021@duck.com   (Master)
 
@@ -77,8 +89,8 @@ erinjohnsono9hztx@gmail.com
 
     <!--105-->
     <p>
-      <h2 style="font-family:Georgia">Message</h2>
-      <pre style="font-family:Georgia">
+      <h2 class="georgia">Message</h2>
+      <pre class="georgia">
 Facebook Messenger
 chenguohua352021@gmail.com
 
@@ -99,25 +111,26 @@ chenguohua352021@gmail.com
 
     <!--Go back-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#00DDDD">
-        <a href=internet.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to Internet</font>
+      <button style="background-color:#00DDDD">
+        <a href="internet.html">
+          <font>Go back to Internet</font>
         </a>
       </button>
     </p>
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
-        <a href=all.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to all</font>
+        <a href="all.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to all</font>
         </a>
       </button>
     </p>
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00BBFF">
-        <a href=main_page.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to main page</font>
+        <a href="main_page.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to main page</font>
         </a>
       </button>
     </p>
+
   </body>
 </html>

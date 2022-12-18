@@ -1,10 +1,12 @@
 <html>
   <head>
+
     <title>About</title>
+    <meta charset="UTF-8" />
 
     <!--Quick visit-->
     <p>
-      <div size=4 style="float:left; font-family:Georgia">
+      <div size="4" style="float:left; font-family:Georgia">
         Private&ensp;Version
       </div>
 
@@ -27,7 +29,7 @@
           <script language="javascript">
             function page(s){
               var d = s.options[s.selectedIndex].value;
-              window.open(d)
+              window.open(d);
               s.selectedIndex = 0;
             }
           </script>
@@ -39,29 +41,39 @@
       </div>
     </p>
 
-    <!--Title-->
-    <br><br><br>
+    <!--CSS-->
+    <style>
+      courier {
+        font-family:Courier;
+      }
+    </style>
+
   </head>
 
 
   <body align="center">
+
+    <br/><br/><br/>
+
     <h1>About</h1>
 
-    <!--Kevin_Chen.PNG-->
+    <!--Photo-->
     <p>
       <br><br>
-      <img src=kevin_chen.PNG title="Kevin Chen" alt="Kevin Chen"
-      style="width:60; height:60; border-radius:50%">
+      <img
+        src="kevin_chen.PNG" title="Kevin Chen" alt="Kevin Chen"
+        style="width:60; height:60; border-radius:50%"
+      />
     </p>
 
     <!--About-->
     <pre>
-      <font size=4 style="font-family:Georgia">
+      <font size="4" style="font-family:Georgia">
 Leaf! Private Web Github Version
 For Willson Wang & Kevin Chen
-Created by Kevin Chen on August.25, 2022.
+Created by Kevin Chen on <courier>2022.08.25</courier>
 
-Last updated: Nov.13, 2022
+Last updated on <courier>2022.12.18</courier>
       </font>
     </pre>
 
@@ -69,7 +81,7 @@ Last updated: Nov.13, 2022
     <p>
       <button style="width:200; height:40; border-radius:12.5px; background-color:00BBFF">
         <a href=main_page.html style="text-decoration:none">
-          <font color=#0000CC size=2 style="font-family:Georgia">Go back to main page</font>
+          <font color="#0000CC" size="2" style="font-family:Georgia">Go back to main page</font>
         </a>
       </button>
     </p>
@@ -77,27 +89,28 @@ Last updated: Nov.13, 2022
     <!--Social-->
     <p>
       <!--Twitter-->
-      <a href=https://twitter.com/KevinCh93106311 style="text-decoration:none">
-        <img src=twitter.jpeg title="Twitter" style="width:30">
+      <a href="https://twitter.com/KevinCh93106311" style="text-decoration:none">
+        <img src="twitter.jpeg" title="Twitter" style="width:30" />
       </a>
       &ensp;&ensp;&ensp;
 
       <!--Facebook-->
-      <a href=https://www.facebook.com/profile.php?id=100079477910822 style="text-decoration:none">
-        <img src=facebook.png title="Facebook" style="width:30">
+      <a href="https://www.facebook.com/profile.php?id=100079477910822" style="text-decoration:none">
+        <img src="facebook.png" title="Facebook" style="width:30" />
       </a>
       &ensp;&ensp;&ensp;
 
       <!--Pinterest-->
-      <a href=https://pinterest.com/Kevin_Chen387 style="text-decoration:none">
-        <img src=pinterest.png title="Pinterest" style="width:30">
+      <a href="https://pinterest.com/Kevin_Chen387" style="text-decoration:none">
+        <img src="pinterest.png" title="Pinterest" style="width:30" />
       </a>
     </p>
     <br>
 
-    <pre style="font-family:Menlo">
-Web 1.7   KC 202212
+    <pre class="courier">
+Web 1.8   KC 202212
 <a href=https://kevinchen387.github.io>https://kevinchen387.github.io</a>
     </pre>
+
   </body>
 </html>

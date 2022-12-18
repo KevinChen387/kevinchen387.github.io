@@ -1,6 +1,8 @@
 <html>
   <head>
+
     <title>Internet</title>
+    <meta charset="UTF-8" />
 
     <!--Quick Visit-->
     <p>
@@ -27,7 +29,7 @@
           <script language="javascript">
             function page(s){
               var d = s.options[s.selectedIndex].value;
-              window.open(d)
+              window.open(d);
               s.selectedIndex = 0;
             }
           </script>
@@ -39,46 +41,51 @@
       </div>
     </p>
 
-    <br><br><br>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="button.css" />
+
   </head>
 
 
   <body align="center">
+
+    <br/><br/><br/>
+
     <h1>Internet</h1>
-    <hr width=400>
+    <hr width="400">
 
     <!--109&105-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#1155FF">
-        <a href=109-105.html style="text-decoration:none">
-          <font color=#FFFFFF size=4 style="font-family:Georgia">109&ensp;&&ensp;105</font>
+      <button style="background-color:#1155FF">
+        <a href="109-105.html">
+          <font style="color:#FFFFFF">109 & 105</font>
         </a>
       </button>
     </p>
 
     <!--Website List-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#FF44AA">
-        <a href=website_list.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Website&ensp;List</font>
+      <button style="background-color:#FF44AA">
+        <a href="website_list.html">
+          <font>Website List</font>
         </a>
       </button>
     </p>
 
     <!--RSA Public Key-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#00DDDD">
-        <a href=rsa_public_key.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">RSA&ensp;Public&ensp;Key</font>
+      <button style="background-color:#00DDDD">
+        <a href="rsa_public_key.html">
+          <font>RSA Public Key</font>
         </a>
       </button>
     </p>
 
     <!--TestFlight Apps-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#FFCC22">
-        <a href=testflight_apps.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">TestFlight&ensp;Apps</font>
+      <button style="background-color:#FFCC22">
+        <a href="testflight_apps.html">
+          <font>TestFlight Apps</font>
         </a>
       </button>
     </p>
@@ -99,4 +106,5 @@
       </button>
     </p>
   </body>
+  
 </html>

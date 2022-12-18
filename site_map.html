@@ -1,10 +1,12 @@
 <html>
   <head>
+
     <title>Site Map</title>
+    <meta charset="UTF-8" />
 
     <!--Quick Visit-->
     <p>
-      <div size=4 style="float:left; font-family:Georgia">
+      <div size="4" style="float:left; font-family:Georgia">
         Private&ensp;Version
       </div>
 
@@ -27,7 +29,7 @@
           <script language="javascript">
             function page(s){
               var d = s.options[s.selectedIndex].value;
-              window.open(d)
+              window.open(d);
               s.selectedIndex = 0;
             }
           </script>
@@ -39,28 +41,28 @@
       </div>
     </p>
 
-    <br><br><br>
+    <!--CSS-->
+    <style>
+      li {
+        font-family:Courier;
+      }
+    </style>
+
   </head>
 
 
   <body align="left">
-    <h1>Site Map</h1>
-    <hr width=400 align="left"
-    <br><br><br>
 
-    <pre style="font-size:15; font-family:Menlo">
+    <br/><br/><br/>
+
+    <h1>Site Map</h1>
+    <hr width="400" align="left" />
+    <br/><br/><br/>
+
+    <pre style="font-size:15; font-family:Courier">
 blue: now
 red:  building
     </pre>
-
-    <style>
-      li {
-        font-family:Menlo;
-      }
-      red {
-        color:#FF0000;
-      }
-    </style>
 
     <!--Map-->
     <p>
@@ -107,22 +109,23 @@ red:  building
         </li>
       </ul>
     </p>
-    <br><br><br>
+    <br/><br/><br/>
 
     <!--Go back-->
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
-        <a href=all.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go to all</font>
+        <a href="all.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go to all</font>
         </a>
       </button>
     </p>
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00BBFF">
-        <a href=main_page.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to main page</font>
+        <a href="main_page.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to main page</font>
         </a>
       </button>
     </p>
+
   </body>
 </html>

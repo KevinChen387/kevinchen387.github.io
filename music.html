@@ -1,10 +1,12 @@
 <html>
   <head>
+
     <title>Music</title>
+    <meta charset="UTF-8" />
 
     <!--Quick Visit-->
     <p>
-      <div size=4 style="float:left; font-family:Georgia">
+      <div size="4" style="float:left; font-family:Georgia">
         Private&ensp;Version
       </div>
 
@@ -27,7 +29,7 @@
           <script language="javascript">
             function page(s){
               var d = s.options[s.selectedIndex].value;
-              window.open(d)
+              window.open(d);
               s.selectedIndex = 0;
             }
           </script>
@@ -51,44 +53,54 @@
       }
     </style>
 
-    <br><br><br>
   </head>
 
 
   <body align="left">
+
+    <br/><br/><br/>
+
     <h1>Music</h1>
-    <hr width=400 align="left">
-    
-    <br>
+    <hr width="400" align="left" />
+
+    <br/>
+
     <ul>
-
-    <script>
-      write_file("Alpha", "alpha.mp3");
-      write_file("Oblivion", "oblivion.mp3");
-      write_file("Odyssey", "odyssey.mp3");
-      write_file("Unce Upon a Time", "once_upon_a_time.mp3");
-      write_file("Reverie", "reverie.mp3");
-      write_file("The Grid", "the_grid.mp3");
-      write_file("The Phoenix", "the_phoenix.mp3");
-    </script>
-
+      <script>
+        write_file("Alpha", "alpha.mp3");
+        write_file("Oblivion", "oblivion.mp3");
+        write_file("Odyssey", "odyssey.mp3");
+        write_file("Unce Upon a Time", "once_upon_a_time.mp3");
+        write_file("Reverie", "reverie.mp3");
+        write_file("The Grid", "the_grid.mp3");
+        write_file("The Phoenix", "the_phoenix.mp3");
+      </script>
     </ul>
-    <br>
+
+    <br/>
 
     <!--Go back-->
     <p>
+      <button style="width:300; height:50; border-radius:12.5px; background-color:00AAAA">
+        <a href="file.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to File</font>
+        </a>
+      </button>
+    </p>
+    <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
-        <a href=all.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to all</font>
+        <a href="all.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to all</font>
         </a>
       </button>
     </p>
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00BBFF">
-        <a href=main_page.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to main page</font>
+        <a href="main_page.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to main page</font>
         </a>
       </button>
     </p>
+    
   </body>
 </html>

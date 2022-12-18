@@ -1,148 +1,148 @@
 <html>
   <head>
+
     <title>Leaf! Web</title>
+    <meta charset="UTF-8" />
 
     <!--Quick visit-->
     <p>
-      <div size=4 style="float:left; font-family:Georgia">
-        Private&ensp;Version
-      </div>
+    <div size="4" style="float:left; font-family:Georgia">
+      Private&ensp;Version
+    </div>
 
-      <div style="float:right">
-        <form>
-          <select class="shared" name="pageselect" onchange="page(this)";language="javascript"
-          style="width:100; height:24">
-            <option>Select</option>
-            <option value="main_page.html">Main&ensp;Page</option>
-            <option value="about.html">About</option>
-            <option value="all.html">All</option>
-            <option value="https://www.google.com">Google</option>
-            <option value="https://www.bing.com">Bing</option>
-            <option value="https://www.wikipedia.org">Wikipedia</option>
-            <option value="https://www.github.com">Github</option>
-            <option value="https://outlook.live.com">Outlook</option>
-            <option value="https://mail.163.com">163&ensp;Mail</option>
-          </select>
+    <div style="float:right">
+      <form>
+        <select class="shared" name="pageselect" onchange="page(this)";language="javascript"
+        style="width:100; height:24">
+          <option>Select</option>
+          <option value="main_page.html">Main&ensp;Page</option>
+          <option value="about.html">About</option>
+          <option value="all.html">All</option>
+          <option value="https://www.google.com">Google</option>
+          <option value="https://www.bing.com">Bing</option>
+          <option value="https://www.wikipedia.org">Wikipedia</option>
+          <option value="https://www.github.com">Github</option>
+          <option value="https://outlook.live.com">Outlook</option>
+          <option value="https://mail.163.com">163&ensp;Mail</option>
+        </select>
 
-          <script language="javascript">
-            function page(s){
-              var d = s.options[s.selectedIndex].value;
-              window.open(d)
-              s.selectedIndex = 0;
-            }
-          </script>
-        </form>
-      </div>
+        <script language="javascript">
+          function page(s){
+            var d = s.options[s.selectedIndex].value;
+            window.open(d);
+            s.selectedIndex = 0;
+          }
+        </script>
+      </form>
+    </div>
 
-      <div style="float:right; font-family:Georgia">
-        Quick&ensp;Visit:&ensp;
-      </div>
+    <div style="float:right; font-family:Georgia">
+      Quick&ensp;Visit:&ensp;
+    </div>
     </p>
+
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="button.css" />
+
   </head>
 
 
   <body align="center">
+  
+    <br/><br/><br/>
+
     <!--Kevin_Chen.PNG-->
     <p>
-      <br><br><br>
-      <img src=kevin_chen.PNG title="Kevin Chen"
-      style="width:120; height:120; border-radius:50%">
+      <img
+        src=kevin_chen.PNG title="Kevin Chen" alt="Kevin Chen"
+        style="width:120; height:120; border-radius:50%"
+      />
     </p>
 
-    <!--title-->
-    <h1 align="center">Welcome to Leaf! Web!</h1>
-    <hr width=500>
+    <!--Title-->
+    <h1>Welcome to Leaf! Web!</h1>
+    <hr width="500" />
 
     <!--Google Drive-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#FF5511">
-        <a href=https://drive.google.com/drive/folders/1-9v49dKZO8UQp5ZjzRSw8hwMcfd2nPyg
-        style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Google Drive</font>
+      <button style="background-color:#FF5511">
+        <a href="https://drive.google.com/drive/folders/1-9v49dKZO8UQp5ZjzRSw8hwMcfd2nPyg">
+          <font>Google Drive</font>
         </a>
       </button>
     </p>
-    
+
     <!--Weiyun Drive-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#0066FF">
-        <a href=https://share.weiyun.com/i6gz7kBb style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Weiyun Drive</font>
+      <button style="background-color:#0066FF">
+        <a href="https://share.weiyun.com/i6gz7kBb">
+          <font>Weiyun Drive</font>
         </a>
       </button>
     </p>
 
     <!--Adobe Drive-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#FF0000">
-        <a href=adobe_drive.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Adobe Drive</font>
+      <button style="background-color:#FF0000">
+        <a href="adobe_drive.html">
+          <font>Adobe Drive</font>
         </a>
       </button>
     </p>
 
     <!--Github-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#000000">
-        <a href=http://github.com/KevinChen387/Saved style="text-decoration:none">
-          <font color=#FFFFFF size=4 style="font-family:Georgia">Github</font>
+      <button style="background-color:#000000">
+        <a href="http://github.com/KevinChen387/Saved">
+          <font style="color:#FFFFFF">Github</font>
         </a>
       </button>
     </p>
 
     <!--All-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
-        <a href=all.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">All</font>
+      <button style="background-color:#00AA00">
+        <a href="all.html">
+          <font>All</font>
         </a>
       </button>
     </p>
 
     <!--About-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#FFBB00">
-        <a href=about.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">About</font>
+      <button style="background-color:#FFBB00">
+        <a href="about.html">
+          <font>About</font>
         </a>
       </button>
     </p>
 
     <!--Site Map-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#22DDDD">
-        <a href=site_map.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Site Map</font>
+      <button style="background-color:#22DDDD">
+        <a href="site_map.html">
+          <font>Site Map</font>
         </a>
       </button>
     </p>
 
     <!--Help-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#A500CC">
-        <a href=help.html style="text-decoration:none">
-          <font color=#FFFFFF size=4 style="font-family:Georgia">Help</font>
+      <button style="background-color:#A500CC">
+        <a href="help.html">
+          <font style="color:#FFFFFF">Help</font>
         </a>
       </button>
     </p>
 
     <!--Leaf! Secret Key-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#FF44AA">
-        <a href=secret_key.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Leaf! Secret Key</font>
+      <button style="background-color:#FF44AA">
+        <a href="secret_key.html">
+          <font>Leaf! Secret Key</font>
         </a>
       </button>
     </p>
 
-    <!--sNeutron-->
-    <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#0000CC">
-        <a href=sneutron.html style="text-decoration:none">
-          <font color=#FFFFFF size=4 style="font-family:Georgia">sNeutron</font>
-        </a>
-      </button>
-    </p>
   </body>
 </html>
-

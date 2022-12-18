@@ -1,10 +1,12 @@
 <html>
   <head>
-    <title>TestFlight&ensp;Apps</title>
+
+    <title>TestFlight Apps</title>
+    <meta charset="UTF-8" />
 
     <!--Quick Visit-->
     <p>
-      <div size=4 style="float:left; font-family:Georgia">
+      <div size="4" style="float:left; font-family:Georgia">
         Private&ensp;Version
       </div>
 
@@ -27,7 +29,7 @@
           <script language="javascript">
             function page(s){
               var d = s.options[s.selectedIndex].value;
-              window.open(d)
+              window.open(d);
               s.selectedIndex = 0;
             }
           </script>
@@ -39,13 +41,39 @@
       </div>
     </p>
 
-    <br><br><br>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="button.css" />
+
+    <!--JavaScript-->
+    <script>
+      function write_app(name, site) {
+        if (! site) {
+          var color = "#E63F00";
+          var link = "";
+        } else {
+          var color = "#FFBB00";
+          var link = " href=" + site;
+        }
+
+        document.write('\
+          <p>\n\
+          <button style="background-color:' + color + '">\n\
+          <a' + link + '><font size=4 color=#0000CC>' + name + '</font></a>\n\
+          </button>\n\
+          </p>\n'
+        );
+      }
+    </script>
+    
   </head>
 
 
   <body align="center">
+
+    <br/><br/><br/>
+
     <h1>TestFlight Apps</h1>
-    <hr width=400>
+    <hr width="400" />
     
     <pre style="font-family:Menlo">
 Red: No link
@@ -53,48 +81,16 @@ Yellow: TestFlight App
 Blue: AppStore App
     </pre>
 
-    <!--Style-->
-    <style>
-      button {
-        width:300;
-        height:50;
-        border-radius:12.5px;
-        background-color:#FFBB00;
-        font-family:Georgia;
-      }
-      a {
-        text-decoration:none;
-      }
-    </style>
-
     <!--Download TestFlight-->
     <p>
       <button style="background-color:#00CCCC">
-        <a href=https://apps.apple.com/us/app/testflight/id899247664?>
-          <font size=4>TestFlight</font>
+        <a href="https://apps.apple.com/us/app/testflight/id899247664?">
+          <font size="4">TestFlight</font>
         </a>
       </button>
     </p>
 
-    <!--Javascript-->
     <script>
-      function write_app(name, site) {
-        if (! site) {
-          var c = "#E63F00";
-          var h = "";
-        } else {
-          var c = "#FFBB00";
-          var h = " href=" + site;
-        }
-        document.write('\
-          <p>\n\
-          <button style="background-color:' + c + '">\n\
-          <a' + h + '><font size=4 color=#0000CC>' + name + '</font></a>\n\
-          </button>\n\
-          </p>\n'
-        );
-      }
-
       write_app("1.1.1.1", "https://testflight.apple.com/join/QKqitFwc");
       write_app("1Blocker", "");
       write_app("1Password 7", "https://testflight.apple.com/join/flDiG5AU");
@@ -173,25 +169,26 @@ Blue: AppStore App
     <!--Go back-->
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00DDDD">
-        <a href=internet.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to Internet</font>
+        <a href="internet.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to Internet</font>
         </a>
       </button>
     </p>
 
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
-        <a href=all.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to all</font>
+        <a href="all.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to all</font>
         </a>
       </button>
     </p>
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00BBFF">
-        <a href=main_page.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to main page</font>
+        <a href="main_page.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to main page</font>
         </a>
       </button>
     </p>
+
   </body>
 </html>

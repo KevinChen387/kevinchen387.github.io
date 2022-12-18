@@ -1,10 +1,12 @@
 <html>
   <head>
+
     <title>PDF</title>
+    <meta charset="UTF-8" />
 
     <!--Quick Visit-->
     <p>
-      <div size=4 style="float:left; font-family:Georgia">
+      <div size="4" style="float:left; font-family:Georgia">
         Private&ensp;Version
       </div>
 
@@ -27,7 +29,7 @@
           <script language="javascript">
             function page(s){
               var d = s.options[s.selectedIndex].value;
-              window.open(d)
+              window.open(d);
               s.selectedIndex = 0;
             }
           </script>
@@ -44,31 +46,44 @@
 
     <!--CSS-->
     <style>
-    li {
-      font-size:20;
-      font-family:Georgia;
-      height:30px;
-    }
+      li {
+        font-size:20;
+        font-family:Georgia;
+        height:30px;
+      }
     </style>
 
-    <br><br><br>
   </head>
 
 
   <body align="left">
-    <h1>PDF</h1>
-    <hr width=400 align="left">
 
+    <br/><br/><br/>
+
+    <h1>PDF</h1>
+    <hr width="400" align="left" />
+
+    <br/>
+    
     <ul>
-    <script>
-      write_file("Isotopes", "isotopes.pdf");
-      write_file("IUPAC Periodic Table of Elements", "iupac_periodic_table_of_the_elements.pdf");
-      write_file("Size Comparison of the Universe 2018 Source", "size_comparison_of_the_universe_2018_source.pdf");
-      write_file("Stable Isotopes", "stable_isotopes.pdf");
-    </script>
+      <script>
+        write_file("Isotopes", "isotopes.pdf");
+        write_file("IUPAC Periodic Table of Elements", "iupac_periodic_table_of_the_elements.pdf");
+        write_file("Size Comparison of the Universe 2018 Source", "size_comparison_of_the_universe_2018_source.pdf");
+        write_file("Stable Isotopes", "stable_isotopes.pdf");
+      </script>
     </ul>
 
+    <br/>
+
     <!--Go back-->
+    <p>
+      <button style="width:300; height:50; border-radius:12.5px; background-color:00AAAA">
+        <a href="file.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to File</font>
+        </a>
+      </button>
+    </p>
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
         <a href=all.html style="text-decoration:none">
@@ -83,5 +98,6 @@
         </a>
       </button>
     </p>
+    
   </body>
 </html>

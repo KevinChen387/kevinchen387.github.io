@@ -1,10 +1,12 @@
 <html>
   <head>
+
     <title>Letter</title>
+    <meta charset="UTF-8" />
 
     <!--Quick Visit-->
     <p>
-      <div size=4 style="float:left; font-family:Georgia">
+      <div size="4" style="float:left; font-family:Georgia">
         Private&ensp;Version
       </div>
 
@@ -27,7 +29,7 @@
           <script language="javascript">
             function page(s){
               var d = s.options[s.selectedIndex].value;
-              window.open(d)
+              window.open(d);
               s.selectedIndex = 0;
             }
           </script>
@@ -39,28 +41,33 @@
       </div>
     </p>
 
-    <br><br><br>
+    <!--CSS-->
+    <link rel="stylesheet" type="text/css" href="button.css" />
+
   </head>
 
 
   <body align="center">
+
+    <br/><br/><br/>
+
     <h1>Letter</h1>
-    <hr width=400>
+    <hr width="400" />
 
     <!--726 Code-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#66DD00">
-        <a href=726_code.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">726&ensp;Code</font>
+      <button style="background-color:#66DD00">
+        <a href="726_code.html">
+          <font>726 Code</font>
         </a>
       </button>
     </p>
 
     <!--1219 Code-->
     <p>
-      <button style="width:300; height:50; border-radius:12.5px; background-color:#EE7700">
-        <a href=1219_code.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">1219&ensp;Code</font>
+      <button style="background-color:#EE7700">
+        <a href="1219_code.html">
+          <font>1219 Code</font>
         </a>
       </button>
     </p>
@@ -80,5 +87,6 @@
         </a>
       </button>
     </p>
+    
   </body>
 </html>

@@ -1,10 +1,12 @@
 <html>
   <head>
+
     <title>Website&ensp;List</title>
+    <meta charset="UTF-8" />
 
     <!--Quick Visit-->
     <p>
-      <div size=4 style="float:left; font-family:Georgia">
+      <div size="4" style="float:left; font-family:Georgia">
         Private&ensp;Version
       </div>
 
@@ -27,7 +29,7 @@
           <script language="javascript">
             function page(s){
               var d = s.options[s.selectedIndex].value;
-              window.open(d)
+              window.open(d);
               s.selectedIndex = 0;
             }
           </script>
@@ -39,21 +41,14 @@
       </div>
     </p>
 
-    <br><br><br>
-  </head>
-
-
-  <body align="center">
-    <h1>Website List</h1>
-    <hr width=400>
-
-    <!--Websites List-->
+    <!--CSS-->
     <style>
       button {
         width:300;
         height:50;
         border-radius:12.5px;
         font-family:Georgia;
+
         background-color:#77DDFF;
       }
       a {
@@ -61,6 +56,7 @@
       }
     </style>
 
+    <!--JavaScript-->
     <script>
       function write_site(name, site) {
         document.write("\
@@ -72,8 +68,20 @@
         </button>\n\
         </p>");
       }
-      
-      // buttons
+    </script>
+
+  </head>
+
+
+  <body align="center">
+    <br/><br/><br/>
+
+    <h1>Website List</h1>
+    <hr width="400" />
+
+    <!--Websites List-->
+
+    <script>      
       write_site("Google", "https://google.com");
       write_site("Wikipedia", "https://wikipedia.org");
       write_site("Bing", "https://bing.com");
@@ -97,24 +105,24 @@
     <!--Go back-->
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00DDDD">
-        <a href=internet.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to Internet</font>
+        <a href="internet.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to Internet</font>
         </a>
       </button>
     </p>
 
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
-        <a href=all.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to all</font>
+        <a href="all.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to all</font>
         </a>
       </button>
     </p>
 
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00BBFF">
-        <a href=main_page.html style="text-decoration:none">
-          <font color=#0000CC size=4 style="font-family:Georgia">Go back to main page</font>
+        <a href="main_page.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to main page</font>
         </a>
       </button>
     </p>
