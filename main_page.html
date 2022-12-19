@@ -44,6 +44,63 @@
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="button.css" />
 
+    <!--JavaScript-->
+    <script>
+      function today() {
+        var date = new Date();
+        var year_number = date.getFullYear();
+        var month_number = date.getMonth() + 1;
+        var date_number = date.getDate();
+        var day_number = date.getDay();
+
+        var month;
+
+        switch (month_number) {
+          case 1: month = "January"; break;
+          case 2: month = "February"; break;
+          case 3: month = "March"; break;
+          case 4: month = "April"; break;
+          case 5: month = "May"; break;
+          case 6: month = "June"; break;
+          case 7: month = "July"; break;
+          case 8: month = "August"; break;
+          case 9: month = "September"; break;
+          case 10: month = "October"; break;
+          case 11: month = "November"; break;
+          case 12: month = "December"; break;
+        }
+
+        var day;
+
+        switch (day_number) {
+          case 1: day = "Monday"; break;
+          case 2: day = "Tuesday"; break;
+          case 3: day = "Wednesday"; break;
+          case 4: day = "Thursday"; break;
+          case 5: day = "Friday"; break;
+          case 6: day = "Saturday"; break;
+          case 7: day = "Sunday"; break;
+        }
+
+        kad1 = new Date(2020, 0, 18);
+        kad = Math.floor((date - kad1) / 86400000 + 1);
+
+        wad1 = new Date(2021, 8, 1);
+        wad = Math.floor((date - wad1) / 86400000 + 1);
+
+        if (kad < 1) {
+          kad = "-";
+        }
+
+        document.write(
+          day.toString() + ", " + month.toString() + "." + date_number.toString() + ", " + year_number.toString() + "<br/>"
+          + year_number.toString() + "-" + month_number.toString() + "-" + date_number.toString() + "<br/>"
+          + kad.toString() + " KAD<br/>"
+          + wad.toString() + " WAD"
+        );
+      }
+    </script>
+
   </head>
 
 
@@ -60,7 +117,15 @@
     </p>
 
     <!--Title-->
-    <h1>Welcome to Leaf! Web!</h1>
+    <h1>Leaf!</h1>
+    <h2>Welcome to Leaf! Web!</h2>
+
+    <p style="font-family:Courier">
+      <script>
+        today();
+      </script>
+    </p>
+
     <hr width="500" />
 
     <!--Google Drive-->
@@ -76,7 +141,7 @@
     <p>
       <button style="background-color:#0066FF">
         <a href="https://share.weiyun.com/i6gz7kBb">
-          <font>Weiyun Drive</font>
+          <font style="color:#FFFFFF">Weiyun Drive</font>
         </a>
       </button>
     </p>
@@ -85,7 +150,7 @@
     <p>
       <button style="background-color:#FF0000">
         <a href="adobe_drive.html">
-          <font>Adobe Drive</font>
+          <font style="color:#FFFFFF">Adobe Drive</font>
         </a>
       </button>
     </p>
@@ -143,6 +208,6 @@
         </a>
       </button>
     </p>
-
+    
   </body>
 </html>

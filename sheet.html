@@ -41,6 +41,18 @@
       </div>
     </p>
 
+    <!--JavaScript-->
+    <script src="write_file.js"></script>
+
+    <!--CSS-->
+    <style>
+      li {
+        font-size:20;
+        font-family:Georgia;
+        height:30px;
+      }
+    </style>
+
   </head>
 
 
@@ -51,7 +63,25 @@
     <h1>Sheet</h1>
     <hr width="400" align="left" />
 
+    <br/>
+
+    <ul>
+      <script>
+        write_file("Isotopes", "isotopes.xlsx");
+        write_file("Stable Isotopes", "stable_isotopes.xlsx");
+      </script>
+    </ul>
+
+    <br/>
+
     <!--Go back-->
+    <p>
+      <button style="width:300; height:50; border-radius:12.5px; background-color:00AAAA">
+        <a href="file.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to File</font>
+        </a>
+      </button>
+    </p>
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
         <a href="all.html" style="text-decoration:none">

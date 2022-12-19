@@ -1,7 +1,7 @@
 <html>
   <head>
 
-    <title>File</title>
+    <title>TXT</title>
     <meta charset="UTF-8" />
 
     <!--Quick Visit-->
@@ -29,7 +29,7 @@
           <script language="javascript">
             function page(s){
               var d = s.options[s.selectedIndex].value;
-              window.open(d)
+              window.open(d);
               s.selectedIndex = 0;
             }
           </script>
@@ -41,74 +41,46 @@
       </div>
     </p>
 
+    <!--JavaScript-->
+    <script src="write_file.js"></script>
+
     <!--CSS-->
-    <link rel="stylesheet" type="text/css" href="button.css" />
+    <style>
+      li {
+        font-size:20;
+        font-family:Georgia;
+        height:30px;
+      }
+    </style>
 
   </head>
 
 
-  <body align="center">
+  <body align="left">
 
     <br/><br/><br/>
 
-    <h1>File</h1>
-    <hr width="400" />
+    <h1>Sheet</h1>
+    <hr width="400" align="left" />
 
-    <!--Music-->
-    <p>
-      <button style="background-color:#9900FF">
-        <a href="music.html">
-          <font style="color:#FFFFFF">Music</font>
-        </a>
-      </button>
-    </p>
+    <br/>
 
-    <!--PDF-->
-    <p>
-      <button style="background-color:#DD0000">
-        <a href="pdf.html" style="text-decoration:none">
-          <font style="color:#FFFFFF">PDF</font>
-        </a>
-      </button>
-    </p>
+    <ul>
+      <script>
+        write_file("Prime Factorization", "prime_factorization.txt");
+      </script>
+    </ul>
 
-    <!--Video-->
-    <p>
-      <button style="background-color:#EE7700">
-        <a href="video.html">
-          <font>Video</font>
-        </a>
-      </button>
-    </p>
-
-    <!--Photo-->
-    <p>
-      <button style="background-color:#00BBAA">
-        <a href="photo.html">
-          <font>Photo</font>
-        </a>
-      </button>
-    </p>
-
-    <!--Sheet-->
-    <p>
-      <button style="background-color:#66DD00">
-        <a href="sheet.html">
-          <font>Sheet</font>
-        </a>
-      </button>
-    </p>
-
-    <!--TXT-->
-    <p>
-      <button style="background-color:#CCCCCC">
-        <a href="txt.html">
-          <font>TXT</font>
-        </a>
-      </button>
-    </p>
+    <br/>
 
     <!--Go back-->
+    <p>
+      <button style="width:300; height:50; border-radius:12.5px; background-color:00AAAA">
+        <a href="file.html" style="text-decoration:none">
+          <font color="#0000CC" size="4" style="font-family:Georgia">Go back to File</font>
+        </a>
+      </button>
+    </p>
     <p>
       <button style="width:300; height:50; border-radius:12.5px; background-color:#00AA00">
         <a href="all.html" style="text-decoration:none">
