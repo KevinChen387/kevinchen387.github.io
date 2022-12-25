@@ -41,27 +41,67 @@
       </div>
     </p>
 
+    <!--CSS-->
+    <style>
+      body {
+        text-align:left;
+      }
+
+      .note {
+        color:#0000FF;
+      }
+
+      table {
+        width:700;
+        text-align:left;
+        border-collapse: collapse;
+        border:1.5px solid #000000;
+      }
+        
+      tr {
+        height:25px;
+      }
+
+      th {
+        background-color:#00BBFF;
+        font-family:Georgia;
+        size:30px;
+        border:1.5px solid #000000;
+      }
+
+      td {
+        border-top:1px solid #AAAAAA;
+        border-bottom:1px solid #AAAAAA;
+        border-left:1.5px solid #000000;
+        border-right:1.5px solid #000000;
+        font-family:Courier;
+      }
+    </style>
   </head>
 
 
-  <body align="center">
+  <body>
 
     <br/><br/><br/>
 
     <h1>Archive</h1>
+    <hr align="left" />
+
+    <br/>
     
-    <table align="center" style="font-family:Courier" border="1" cellspacing="0">
+    <h2>Archive Photos</h2>
+    <table cellpadding="5px">
 
       <tr>
-        <th width="150">Date</th>
-        <th width="200">Page</th>
-        <th width="100">Version</th>
-        <th width="100">Photo</th>
+        <th>Date</th>
+        <th>Page</th>
+        <th>Version</th>
+        <th>Photo</th>
       </tr>
 
       <tr>
         <td>2022-08-18</td>
-        <td>Main Page (Local)</td>
+        <td>Main Page <span class="note">(Local)</span></td>
         <td>BETA</td>
         <td>
           <a href="archive_20220818_1.png">View</a>
@@ -70,7 +110,7 @@
 
       <tr>
         <td>2022-08-25</td>
-        <td>Main Page (Local)</td>
+        <td>Main Page <span class="note">(Local)</span></td>
         <td>1.0</td>
         <td>
           <a href="archive_20220825_1.png">View</a>
@@ -79,7 +119,7 @@
 
       <tr>
         <td>2022-08-26</td>
-        <td>Main Page (Local)</td>
+        <td>Main Page <span class="note">(Local)</span></td>
         <td>1.1</td>
         <td>
           <a href="archive_20220826_1.png">View</a>
@@ -303,6 +343,8 @@
       </tr>
 
     </table>
+
+    <br/>
 
     <!--Go back-->
     <p>

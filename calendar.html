@@ -42,55 +42,38 @@
     </p>
 
     <!--Javascript-->
-    <script>
-      function getDayInfo() {
-        y = window.prompt("Enter year:");
-        m = window.prompt("Enter month:");
-        d = window.prompt("Enter day:");
-        var kad1 = new Date(2020, 0, 18);
-        var kbd1 = new Date(2021, 0, 21);
-        var kcd1 = new Date(2020, 5, 2);
-        var wad1 = new Date(2021, 8, 1);
-        var now = new Date(y, m-1, d);
+    <script src="dateinfo.js"></script>
 
-        var kad = (now - kad1) / 86400000 + 1 ;
-        if (kad < 1) {
-          kad = "- ";
-        } else {
-          kad += ' ';
-        }
-
-        var kbd = (now - kbd1) / 86400000 + 1;
-        if (kbd < 1) {
-          kbd = "- ";
-        } else {
-          kbd += ' ';
-        }
-
-        var kcd = (now - kcd1) / 86400000 + 1;
-        if (kcd < 1) {
-          kcd = "- ";
-        } else {
-          kcd += ' ';
-        }
-
-        var wad = (now - wad1) / 86400000 + 1;
-        if (wad < 1) {
-          wad = "- ";
-        } else {
-          wad += ' ';
-        }
-
-        alert(
-          y + '.' + m + '.' + d + "\n\n"
-          + kad + "KAD" + '\n'
-          + kbd + "KBD" + '\n'
-          + kcd + "KCD" + '\n'
-          + wad + "WAD"
-        );
+    <!--CSS-->
+    <style>
+      .date {
+        font-family:Courier
       }
-    </script>
 
+      #listTitle {
+        font-family:Georgia;
+        font-size:25px;
+      }
+
+      table {
+        border-collapse: collapse;
+        border:1.5px solid #000000;
+      }
+
+      th {
+        border:1.5px solid #000000;
+        font-family:Georgia;
+        background-color:#00BBFF;
+      }
+
+      td {
+        border-left:1.5px solid #000000;
+        border-right:1.5px solid #000000;
+        border-top:1px solid #AAAAAA;
+        border-bottom:1px solid #AAAAAA;
+        font-family:Courier;
+      }
+    </style>
   </head>
 
 
@@ -101,18 +84,24 @@
     <h1>Calendar</h1>
     <hr width="400" />
 
-    <pre style="font-family:Menlo">
+    <h2>Today</h2>
+    <p class="date">
+      <script>
+        today();
+      </script>
+    </p>
+
+    <h2>Custom Calendar</h2>
+    <pre class="date">
 1 KAD = 2020.01.18
 1 KBD = 2021.01.21
 1 KCD = 2020.06.02
     </pre>
 
     <h2>KAD List</h2>
-    
-    <pre class="georgia">
-(End of a month)
-    </pre>
-    <table align="center" style="font-family:Courier" border="1" cellspacing="0">
+
+    <table align="center" border="1" cellspacing="0">
+
       <tr>
         <th style="width:150">Month</th>
         <th style="width:100">KAD</th>
@@ -251,12 +240,14 @@
       </tr>
     </table>
 
-    <!--Get Day Info-->
+  <!--Get Day Info-->
     <p>
       <button onclick="getDayInfo()" style="width:120; height:40; border-radius:25px">
         <font size="2">Get Day info</font>
       </button>
     </p>
+
+    <br/>
 
     <!--Go back-->
     <p>

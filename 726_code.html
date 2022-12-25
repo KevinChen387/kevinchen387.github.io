@@ -43,98 +43,151 @@
 
     <!--CSS-->
     <style>
-     td {
-      text-align:center;
-     }
-     .georgia {
-      font-family:Georgia;
-     }
+      body {
+        text-align:center;
+      }
+
+      table {
+        width:500;
+        text-align:center;
+        border-collapse: collapse;
+        border:1.5px solid #000000;
+      }
+        
+      tr {
+        height:25px;
+      }
+
+      th {
+        background-color:#00BBFF;
+        font-family:Georgia;
+        size:30px;
+        border:1.5px solid #000000;
+      }
+
+      td {
+        border-top:1px solid #AAAAAA;
+        border-bottom:1px solid #AAAAAA;
+        border-left:1.5px solid #000000;
+        border-right:1.5px solid #000000;
+      }
+
+      .code {
+        font-family:Courier;
+        color:#0000FF;
+        font-size:15px;
+      }
+
+      .note,
+      .meaning {
+        font-family:Georgia;
+        font-size:15px;
+      }
+
+      s {
+        color:#0000FF;
+      }
+
+      span {
+        color:#000000;
+      }
     </style>
 
   </head>
 
 
-  <body align="center">
+  <body>
 
     <br/><br/><br/>
 
     <h1>726 Code</h1>
-    <hr width="400" />
+    
+    <br/>
 
-    <table align="center" style="font-family:Courier" border="1" cellspacing="0">
+    <table align="center">
       <tr>
-        <th style="width:100">Code</th>
-        <th style="width:250">Meaning</th>
+        <th>Code</th>
+        <th>Meaning</th>
       </tr>
       <tr>
-        <td>O</td>
-        <td>Open, S T W<sup>*</sup></td>
+        <td class="code">O</td>
+        <td>
+          <span class="meaning">Open, S T W</span><sup><span class="code">*</sup>
+        </td>
       </tr>
       <tr>
-        <td>B</td>
-        <td>S T W</td>
+        <td class="code">B</td>
+        <td class="meaning">S T W</td>
       </tr>
       <tr>
-        <td>A</td>
-        <td><strike>S</strike> T W</td>
+        <td class="code">A</td>
+        <td class="meaning"><s><span>S</span></s> T W</td>
       </tr>
       <tr>
-        <td>P</td>
-        <td>Private, <strike>S T</strike> W</td>
+        <td class="code">P</td>
+        <td class="meaning">Private, <s><span>S T</span></s> W</td>
       </tr>
       <tr>
-        <td>P+</td>
-        <td>Private+, <strike>S T</strike> W</td>
+        <td class="code">P+</td>
+        <td class="meaning">Private+, <s><span>S T</span></s> W</td>
       </tr>
       <tr>
-        <td>P++</td>
-        <td>Private++, <strike>S T</strike> W</td>
+        <td class="code">P++</td>
+        <td class="meaning">Private++, <s><span>S T</span></s> W</td>
       </tr>
       <tr>
-        <td>TS</td>
-        <td>Top Secret, <strike>S T W</strike></td>
+        <td class="code" style="border-bottom: 1.5px solid #000000">TS</td>
+        <td class="meaning" style="border-bottom: 1.5px solid #000000">
+          Top Secret, 
+          <s>
+            <span>S T W</span>
+          </s>
+        </td>
       </tr>
       <tr>
-        <td>C</td>
-        <td>Chemistry</td>
+        <td class="code">C</td>
+        <td class="meaning">Chemistry</td>
       </tr>
       <tr>
-        <td>i</td>
-        <td>Internet</td>
+        <td class="code">i</td>
+        <td class="meaning">Internet</td>
       </tr>
       <tr>
-        <td>I</td>
-        <td>Important</td>
+        <td class="code">I</td>
+        <td class="meaning">Important</td>
       </tr>
       <tr>
-        <td>LS</td>
-        <td>Leaf-Sea! (Inside)</td>
+        <td class="code">LS</td>
+        <td class="meaning">Leaf-Sea! (Inside)</td>
       </tr>
       <tr>
-        <td>LS+</td>
-        <td>Leaf-Sea! + (Inside+)</td>
+        <td class="code">LS+</td>
+        <td class="meaning">Leaf-Sea! + (Inside+)</td>
       </tr>
       <tr>
-        <td>S</td>
-        <td>Saved</td>
+        <td class="code">S</td>
+        <td class="meaning">Saved</td>
       </tr>
       <tr>
-        <td>T</td>
-        <td>Test or 326</td>
+        <td class="code">T</td>
+        <td class="meaning">Test or <span class="code">326</span></td>
       </tr>
       <tr>
-        <td>W</td>
-        <td>Teacher</td>
+        <td class="code">W</td>
+        <td class="meaning">Teacher</td>
       </tr>
       <tr>
-        <td><strike>W</strike></td>
-        <td>No teacher</td>
+        <td class="code"><s>W</s></td>
+        <td class="meaning">No teacher</td>
       </tr>
     </table>
 
-    <pre class="georgia">
-* S = student, T = teacher, W = Willson Wang
-    </pre>
+    <p>
+      <span class="code">*</span> 
+      <span class="note">S = student, T = teacher, W = Willson Wang
+    </p>
+
+    <br/>
 
     <!--Go back-->
     <p>
@@ -158,6 +211,6 @@
         </a>
       </button>
     </p>
-    
+
   </body>
 </html>
