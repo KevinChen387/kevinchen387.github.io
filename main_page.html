@@ -6,207 +6,158 @@
 
     <!--Quick visit-->
     <p>
-    <div size="4" style="float:left; font-family:Georgia">
-      Private&ensp;Version
-    </div>
+      <div size="4" style="float:left; font-family:Georgia">
+        Private&ensp;Version
+      </div>
 
-    <div style="float:right">
-      <form>
-        <select class="shared" name="pageselect" onchange="page(this)";language="javascript"
-        style="width:100; height:24">
-          <option>Select</option>
-          <option value="main_page.html">Main&ensp;Page</option>
-          <option value="about.html">About</option>
-          <option value="all.html">All</option>
-          <option value="https://www.google.com">Google</option>
-          <option value="https://www.bing.com">Bing</option>
-          <option value="https://www.wikipedia.org">Wikipedia</option>
-          <option value="https://www.github.com">Github</option>
-          <option value="https://outlook.live.com">Outlook</option>
-          <option value="https://mail.163.com">163&ensp;Mail</option>
-        </select>
+      <div style="float:right">
+        <form>
+          <select class="shared" name="pageselect" onchange="page(this)";language="javascript"
+          style="width:100; height:24">
+            <option>Select</option>
+            <option value="main_page.html">Main&ensp;Page</option>
+            <option value="about.html">About</option>
+            <option value="all.html">All</option>
+            <option value="https://www.google.com">Google</option>
+            <option value="https://www.bing.com">Bing</option>
+            <option value="https://www.wikipedia.org">Wikipedia</option>
+            <option value="https://www.github.com">Github</option>
+            <option value="https://outlook.live.com">Outlook</option>
+            <option value="https://mail.163.com">163&ensp;Mail</option>
+          </select>
 
-        <script language="javascript">
-          function page(s){
-            var d = s.options[s.selectedIndex].value;
-            window.open(d);
-            s.selectedIndex = 0;
-          }
-        </script>
-      </form>
-    </div>
+          <script language="javascript">
+            function page(s){
+              var d = s.options[s.selectedIndex].value;
+              window.open(d);
+              s.selectedIndex = 0;
+            }
+          </script>
+        </form>
+      </div>
 
-    <div style="float:right; font-family:Georgia">
-      Quick&ensp;Visit:&ensp;
-    </div>
+      <div style="float:right; font-family:Georgia">
+        Quick&ensp;Visit:&ensp;
+      </div>
     </p>
+
+    <!--icon-->
+    <link rel="icon" href="leaf.ico" />
 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="button.css" />
 
-    <!--JavaScript-->
-    <script>
-      function today() {
-        var date = new Date();
-        var year_number = date.getFullYear();
-        var month_number = date.getMonth() + 1;
-        var date_number = date.getDate();
-        var day_number = date.getDay();
-
-        var month;
-
-        switch (month_number) {
-          case 1: month = "January"; break;
-          case 2: month = "February"; break;
-          case 3: month = "March"; break;
-          case 4: month = "April"; break;
-          case 5: month = "May"; break;
-          case 6: month = "June"; break;
-          case 7: month = "July"; break;
-          case 8: month = "August"; break;
-          case 9: month = "September"; break;
-          case 10: month = "October"; break;
-          case 11: month = "November"; break;
-          case 12: month = "December"; break;
-        }
-
-        var day;
-
-        switch (day_number) {
-          case 1: day = "Monday"; break;
-          case 2: day = "Tuesday"; break;
-          case 3: day = "Wednesday"; break;
-          case 4: day = "Thursday"; break;
-          case 5: day = "Friday"; break;
-          case 6: day = "Saturday"; break;
-          case 7: day = "Sunday"; break;
-        }
-
-        kad1 = new Date(2020, 0, 18);
-        kad = Math.floor((date - kad1) / 86400000 + 1);
-
-        wad1 = new Date(2021, 8, 1);
-        wad = Math.floor((date - wad1) / 86400000 + 1);
-
-        if (kad < 1) {
-          kad = "-";
-        }
-
-        document.write(
-          day.toString() + ", " + month.toString() + "." + date_number.toString() + ", " + year_number.toString() + "<br/>"
-          + year_number.toString() + "-" + month_number.toString() + "-" + date_number.toString() + "<br/>"
-          + kad.toString() + " KAD<br/>"
-          + wad.toString() + " WAD"
-        );
+    <style>
+      body {
+        text-align:center;
       }
-    </script>
+    </style>
+
+    <!--JavaScript-->
+    <script src="dateinfo.js"></script>
 
   </head>
 
 
-  <body align="center">
+  <body>
   
     <br/><br/><br/>
 
-    <!--Kevin_Chen.PNG-->
     <p>
-      <img
-        src=kevin_chen.PNG title="Kevin Chen" alt="Kevin Chen"
-        style="width:120; height:120; border-radius:50%"
-      />
+      <img src="leaf.svg" width="120" height="120" />
     </p>
 
     <!--Title-->
     <h1>Leaf!</h1>
     <h2>Welcome to Leaf! Web!</h2>
 
-    <p style="font-family:Courier">
-      <script>
-        today();
-      </script>
-    </p>
+    <pre style="font-family:Courier">
+<script>
+today();
+</script>
+    </pre>
 
-    <hr width="500" />
+    <hr width="400" />
 
     <!--Google Drive-->
     <p>
-      <button style="background-color:#FF5511">
-        <a href="https://drive.google.com/drive/folders/1-9v49dKZO8UQp5ZjzRSw8hwMcfd2nPyg">
+      <a href="https://drive.google.com/drive/folders/1-9v49dKZO8UQp5ZjzRSw8hwMcfd2nPyg">
+        <button style="background-color:#FF5511">
           <font>Google Drive</font>
-        </a>
-      </button>
+        </button>
+      </a>
     </p>
 
     <!--Weiyun Drive-->
     <p>
-      <button style="background-color:#0066FF">
-        <a href="https://share.weiyun.com/i6gz7kBb">
+      <a href="https://share.weiyun.com/i6gz7kBb">
+        <button style="background-color:#0066FF">
           <font style="color:#FFFFFF">Weiyun Drive</font>
-        </a>
-      </button>
+        </button>
+      </a>
     </p>
 
     <!--Adobe Drive-->
     <p>
-      <button style="background-color:#FF0000">
-        <a href="adobe_drive.html">
+      <a href="adobe_drive.html">
+        <button style="background-color:#FF0000">
           <font style="color:#FFFFFF">Adobe Drive</font>
-        </a>
-      </button>
+        </button>
+      </a>
     </p>
 
     <!--Github-->
     <p>
-      <button style="background-color:#000000">
-        <a href="http://github.com/KevinChen387/Saved">
-          <font style="color:#FFFFFF">Github</font>
-        </a>
-      </button>
+      <a href="http://github.com/KevinChen387/Saved">
+        <button style="background-color:#000000">
+            <font style="color:#FFFFFF">Github</font>
+        </button>
+      </a>
     </p>
 
     <!--All-->
     <p>
-      <button style="background-color:#00AA00">
-        <a href="all.html">
-          <font>All</font>
-        </a>
-      </button>
+      <a href="all.html">
+        <button style="background-color:#00AA00">
+            <font>All</font>
+        </button>
+      </a>
     </p>
 
     <!--About-->
     <p>
-      <button style="background-color:#FFBB00">
-        <a href="about.html">
+      <a href="about.html">
+        <button style="background-color:#FFBB00">
           <font>About</font>
-        </a>
-      </button>
+        </button>
+      </a>
     </p>
 
     <!--Site Map-->
     <p>
-      <button style="background-color:#22DDDD">
-        <a href="site_map.html">
+      <a href="site_map.html">
+        <button style="background-color:#22DDDD">
           <font>Site Map</font>
-        </a>
-      </button>
+        </button>
+      </a>
     </p>
 
     <!--Help-->
     <p>
-      <button style="background-color:#A500CC">
-        <a href="help.html">
+      <a href="help.html">
+        <button style="background-color:#A500CC">
           <font style="color:#FFFFFF">Help</font>
-        </a>
-      </button>
+        </button>
+      </a>
     </p>
 
     <!--Leaf! Secret Key-->
     <p>
-      <button style="background-color:#FF44AA">
-        <a href="secret_key.html">
+      <a href="secret_key.html">
+        <button style="background-color:#FF44AA">
           <font>Leaf! Secret Key</font>
-        </a>
-      </button>
+        </button>
+      </a>
     </p>
     
   </body>
